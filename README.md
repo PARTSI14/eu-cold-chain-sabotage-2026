@@ -143,6 +143,6 @@ _The EFS incident shows why independent monitoring matters: alarms fired, staff 
 
 ## License & attribution
 
-© 2026 PARTSI14. This analysis is released under the MIT License (see [LICENSE](LICENSE)).
+© 2026 Partsinevelos Stylianos. This analysis is released under the MIT License (see [LICENSE](LICENSE)).
 
 MITRE ATT&CK® is a registered trademark of The MITRE Corporation; ATT&CK content © The MITRE Corporation. This project is not affiliated with or endorsed by MITRE or any vendor named. All incident facts come from the public sources listed in section 10.
