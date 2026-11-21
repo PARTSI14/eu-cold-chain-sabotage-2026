@@ -1,0 +1,132 @@
+{
+  "versions": {
+    "attack": "20",
+    "navigator": "5.0.0",
+    "layer": "4.5"
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showName": true,
+    "showID": true,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "legendItems": [
+    {
+      "label": "Direct",
+      "color": "#e60d0d"
+    },
+    {
+      "label": "Inferred / partial",
+      "color": "#fc9f3a"
+    },
+    {
+      "label": "Possible",
+      "color": "#fce93a"
+    }
+  ],
+  "name": "2026 EU refrigeration sabotage - ATT&CK for ICS",
+  "domain": "ics-attack",
+  "description": "Oct-Nov 2026 attacks on internet-exposed refrigeration controllers (Danfoss AK-SM/AK-SC, Copeland/Dixell XWEB). ATT&CK for ICS v20.1. Sources: CERT-FR, CISA fact sheet 5 Nov 2026, ENISA, DomainTools, The Record.",
+  "techniques": [
+    {
+      "techniqueID": "T0883",
+      "tactic": "initial-access",
+      "color": "#e60d0d",
+      "comment": "Controllers ran a web server reachable from the public internet.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1694.001",
+      "tactic": "lateral-movement",
+      "color": "#e60d0d",
+      "comment": "Default or weak credentials (e.g. admin + current date); NCSC: default passwords.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0823",
+      "tactic": "execution",
+      "color": "#fc9f3a",
+      "comment": "Inferred: attackers used the controllers' normal web management functions; no malware.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0836",
+      "tactic": "impair-process-control",
+      "color": "#e60d0d",
+      "comment": "Defrost cycles extended (8 h at one store) and temperature settings raised.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1692.001",
+      "tactic": "impair-process-control",
+      "color": "#fce93a",
+      "comment": "Possible: forced defrost may have been sent as a command; not public.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0831",
+      "tactic": "impact",
+      "color": "#e60d0d",
+      "comment": "Units driven to ~50 C (150 C at an Athens butcher in Wave 2).",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0879",
+      "tactic": "impact",
+      "color": "#e60d0d",
+      "comment": "At least 15 fires; melted equipment; sprinkler water damage.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0828",
+      "tactic": "impact",
+      "color": "#e60d0d",
+      "comment": "Tens of millions of euros in food losses.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0826",
+      "tactic": "impact",
+      "color": "#e60d0d",
+      "comment": "Fresh and frozen storage unusable; aisles emptied.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0880",
+      "tactic": "impact",
+      "color": "#fc9f3a",
+      "comment": "Partial: fire hazard and food-safety risk; no safety system reported bypassed.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0827",
+      "tactic": "impact",
+      "color": "#e60d0d",
+      "comment": "Wave 2: Athens technician needed two hours to regain control.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T0815",
+      "tactic": "impact",
+      "color": "#fce93a",
+      "comment": "Possible: listed by the US fact sheet; not confirmed in Europe.",
+      "enabled": true,
+      "showSubtechniques": true
+    }
+  ]
+}

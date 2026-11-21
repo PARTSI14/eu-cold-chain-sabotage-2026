@@ -1,0 +1,68 @@
+{
+  "versions": {
+    "attack": "20",
+    "navigator": "5.0.0",
+    "layer": "4.5"
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showName": true,
+    "showID": true,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "legendItems": [
+    {
+      "label": "Direct",
+      "color": "#e60d0d"
+    },
+    {
+      "label": "Inferred / partial",
+      "color": "#fc9f3a"
+    },
+    {
+      "label": "Possible",
+      "color": "#fce93a"
+    }
+  ],
+  "name": "2026 EU refrigeration sabotage - ATT&CK Enterprise",
+  "domain": "enterprise-attack",
+  "description": "IT-side techniques of the Oct-Nov 2026 refrigeration campaign. ATT&CK Enterprise v20.1.",
+  "techniques": [
+    {
+      "techniqueID": "T1596.005",
+      "tactic": "reconnaissance",
+      "color": "#e60d0d",
+      "comment": "FOFA used for target discovery (French investigators).",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1595",
+      "tactic": "reconnaissance",
+      "color": "#e60d0d",
+      "comment": "Shared infrastructure scanned industrial equipment (Schneider Electric, Modbus/TCP 502).",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078.001",
+      "tactic": "initial-access",
+      "color": "#e60d0d",
+      "comment": "Default or weak passwords on internet-exposed controllers.",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1199",
+      "tactic": "initial-access",
+      "color": "#e60d0d",
+      "comment": "Some victims hit through the refrigeration contractor (Les Mousquetaires; EFS via Coolworld).",
+      "enabled": true,
+      "showSubtechniques": true
+    }
+  ]
+}
